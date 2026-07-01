@@ -1,0 +1,23 @@
+.page-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: .6rem;
+}
+
+.page-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #1a1a1a;
+}
+
+.filter-bar {
+  background: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: .85rem 1rem;
+}

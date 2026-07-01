@@ -1,0 +1,73 @@
+.footer {
+  background: #1a1a1a;
+  color: #bbb;
+  border-top: 4px solid #f5a800;
+  margin-top: auto;
+  font-size: .875rem;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: .9;
+}
+
+.footer-utn-name {
+  font-weight: 700;
+  color: #fff;
+  font-size: .95rem;
+}
+
+.footer-utn-sub {
+  font-size: .75rem;
+  color: #888;
+}
+
+.footer-desc {
+  font-size: .78rem;
+  color: #777;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-heading {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #f5a800;
+  margin-bottom: .6rem;
+}
+
+.footer-group {
+  font-size: .85rem;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-members li {
+  font-size: .83rem;
+  color: #bbb;
+  padding: .15rem 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.footer-members li:last-child {
+  border-bottom: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2e2e2e;
+  padding: .75rem 0;
+  font-size: .75rem;
+  color: #555;
+  text-align: center;
+}

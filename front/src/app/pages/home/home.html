@@ -1,0 +1,67 @@
+@if (!auth.isAuthenticated()) {
+  <div class="hero-banner">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <p class="hero-eyebrow">UTN Villa María — Desarrollo de Software</p>
+          <h1 class="hero-title">Sistema de Gestión<br>de Productos</h1>
+          <p class="hero-desc">Trabajo Final — Grupo M · 2026</p>
+          <div class="mt-4 d-flex gap-2">
+            <a routerLink="/login" class="btn btn-warning fw-bold px-4">Ingresar</a>
+            <a routerLink="/register" class="btn btn-outline-light px-4">Registrarse</a>
+          </div>
+        </div>
+        <div class="col-md-5 text-end d-none d-md-block">
+          <img src="logo-utn.png" alt="UTN" class="hero-logo" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </div>
+
+} @else {
+  <div class="container mt-4">
+
+    <div class="page-header mb-4">
+      <h4 class="mb-0">Bienvenido, <strong>{{ auth.user()?.email }}</strong></h4>
+      <span class="text-muted small">Sistema de Gestión — UTN Villa María</span>
+    </div>
+
+    @if (loading()) {
+      <div class="text-center py-5">
+        <div class="spinner-border text-secondary" role="status"></div>
+      </div>
+    } @else {
+      <div class="row g-3 mb-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="stat-card">
+            <div class="stat-label">Productos registrados</div>
+            <div class="stat-value">{{ productCount() }}</div>
+            <a routerLink="/products" class="stat-link">Ver listado →</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="stat-card">
+            <div class="stat-label">Categorías</div>
+            <div class="stat-value">{{ categoryCount() }}</div>
+            <a routerLink="/categories" class="stat-link">Ver listado →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Acceso rápido</div>
+            <div class="list-group list-group-flush">
+              <a routerLink="/products" class="list-group-item list-group-item-action">Gestión de Productos</a>
+              <a routerLink="/categories" class="list-group-item list-group-item-action">Gestión de Categorías</a>
+              @if (auth.isAdmin()) {
+                <a routerLink="/admin/users" class="list-group-item list-group-item-action">Administración de Usuarios</a>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+}

@@ -1,0 +1,26 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6 col-lg-5">
+    <div class="card shadow-sm">
+      <div class="card-body p-4 text-center">
+        @if (loading()) {
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Verificando...</span>
+          </div>
+        } @else if (success()) {
+          <i class="bi bi-check-circle display-5 text-success"></i>
+          <h3 class="mt-3 fw-bold">Email verificado correctamente</h3>
+          <a routerLink="/login" class="btn btn-primary mt-3">Ir a iniciar sesión</a>
+        } @else {
+          <i class="bi bi-x-circle display-5 text-danger"></i>
+          <h3 class="mt-3 fw-bold">Token inválido o expirado</h3>
+          @if (needsLogin()) {
+            <p class="text-muted">Iniciá sesión para poder reenviar el email de verificación.</p>
+            <a routerLink="/login" class="btn btn-primary mt-2">Iniciar sesión</a>
+          } @else {
+            <a routerLink="/verify-pending" class="btn btn-primary mt-2">Reenviar email</a>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</div>

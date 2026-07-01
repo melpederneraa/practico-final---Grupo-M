@@ -1,0 +1,98 @@
+.hero-banner {
+  background: #1a1a1a;
+  color: #fff;
+  border-bottom: 4px solid #f5a800;
+}
+
+.hero-eyebrow {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #f5a800;
+  margin-bottom: .75rem;
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .75rem;
+  color: #fff;
+}
+
+.hero-desc {
+  color: rgba(255,255,255,.6);
+  font-size: .95rem;
+  margin: 0;
+}
+
+.hero-logo {
+  height: 80px;
+  filter: brightness(0) invert(1);
+  opacity: .4;
+}
+
+.page-header {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: .75rem;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #f5a800;
+  padding: 1.25rem 1.5rem;
+  border-radius: 2px;
+}
+
+.stat-label {
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #777;
+  margin-bottom: .25rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: .5rem;
+}
+
+.stat-link {
+  font-size: .82rem;
+  color: #555;
+  text-decoration: none;
+}
+.stat-link:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.card-header {
+  background: #f6f6f6;
+  font-weight: 600;
+  font-size: .88rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #444;
+  border-bottom: 1px solid #e0e0e0;
+  padding: .65rem 1rem;
+}
+
+.list-group-item-action {
+  font-size: .9rem;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: .7rem 1rem;
+}
+.list-group-item-action:hover {
+  background: #fff8e7;
+  color: #1a1a1a;
+  text-decoration: none;
+}
