@@ -1,5 +1,4 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
@@ -12,7 +11,7 @@ import { Category } from '../../models/category';
 
 @Component({
   selector: 'app-products',
-  imports: [FormsModule, RouterLink, BottomSheet, DecimalPipe],
+  imports: [FormsModule, RouterLink, BottomSheet],
   templateUrl: './products.html',
   styleUrl: './products.css',
 })
