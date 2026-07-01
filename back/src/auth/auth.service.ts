@@ -18,7 +18,7 @@ export class AuthService {
 
   async register(email: string, password: string) {
     const existing = await this.usersService.findByEmail(email);
-    if (existing) throw new ConflictException('Email already registered');
+    if (existing) throw new ConflictException('El email ya esta registrado');
 
     const isFirstUser = (await this.usersService.findAll()).length === 0;
     const hashed = await bcrypt.hash(password, 10);
