@@ -41,10 +41,10 @@ export class AuthService {
 
   async login(email: string, password: string) {
     const user = await this.usersService.findByEmail(email);
-    if (!user) throw new UnauthorizedException('Invalid credentials');
+    if (!user) throw new UnauthorizedException('Credenciales inválidas');
 
     const matches = await bcrypt.compare(password, user.password);
-    if (!matches) throw new UnauthorizedException('Invalid credentials');
+    if (!matches) throw new UnauthorizedException('Credenciales inválidas');
 
     return { user: this.sanitize(user), access_token: this.signToken(user) };
   }
