@@ -1,18 +1,44 @@
 @if (!auth.isAuthenticated()) {
   <div class="hero-banner">
     <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-md-7">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
           <p class="hero-eyebrow">UTN Villa María — Desarrollo de Software</p>
           <h1 class="hero-title">Sistema de Gestión<br>de Productos</h1>
-          <p class="hero-desc">Trabajo Final — Grupo M · 2026</p>
-          <div class="mt-4 d-flex gap-2">
-            <a routerLink="/login" class="btn btn-warning fw-bold px-4">Ingresar</a>
-            <a routerLink="/register" class="btn btn-outline-light px-4">Registrarse</a>
+          <p class="hero-desc mb-4">Trabajo Final · Grupo M · 2026</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a routerLink="/login" class="btn btn-warning fw-bold px-4 py-2">Ingresar</a>
+            <a routerLink="/register" class="btn btn-outline-light px-4 py-2">Registrarse</a>
           </div>
         </div>
-        <div class="col-md-5 text-end d-none d-md-block">
-          <img src="logo-utn.png" alt="UTN" class="hero-logo" onerror="this.style.display='none'">
+        <div class="col-md-4 d-none d-md-flex justify-content-end">
+          <img src="logo-utn.png" alt="UTN" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-box-seam"></i></div>
+          <h5 class="fw-bold mt-3">Gestión de Productos</h5>
+          <p class="text-muted small">Administrá tu catálogo con precios, stock y categorías.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-tags"></i></div>
+          <h5 class="fw-bold mt-3">Categorías</h5>
+          <p class="text-muted small">Organizá los productos en categorías para una mejor búsqueda.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-people"></i></div>
+          <h5 class="fw-bold mt-3">Usuarios</h5>
+          <p class="text-muted small">Sistema de roles: administradores y usuarios con permisos diferenciados.</p>
         </div>
       </div>
     </div>

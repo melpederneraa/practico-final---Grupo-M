@@ -28,9 +28,23 @@
 }
 
 .hero-logo {
-  height: 80px;
+  height: 100px;
   filter: brightness(0) invert(1);
-  opacity: .4;
+  opacity: .85;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: 3px solid #f5a800;
+  border-radius: 3px;
+  padding: 2rem 1.5rem;
+  height: 100%;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #f5a800;
 }
 
 .page-header {
